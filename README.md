@@ -38,3 +38,4 @@ Os exercícios serão implementados como *workflows* do GitHub Actions e podem s
 A cada `push` de código para este repositório, o GitHub Actions irá automaticamente executar os workflows definidos. Você poderá acompanhar a execução de cada passo na aba "Actions" do repositório.
 
 Vamos começar!
+
