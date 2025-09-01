@@ -9,6 +9,8 @@ on:
   # É um ótimo ponto de partida, mas em projetos reais, geralmente adicionamos filtros
   # para controlar a execução, como veremos nos próximos exemplos.
   push:
+    paths:
+      - '**.md'           # Executa se qualquer arquivo com a extensão .md for alterado em qualquer lugar do repositório.
 
 # Jobs que o workflow executará
 jobs:
