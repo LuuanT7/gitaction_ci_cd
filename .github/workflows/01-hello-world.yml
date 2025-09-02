@@ -13,11 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Exibe RA e Nome
-        run: echo "RA: 6322504 - Nome: Luan Teixeira"
+    - name: Exibe RA e Nome
+      run: echo "RA: 6322504 - Nome: Luan Teixeira"
 
-      - name: Mostra o diretório de trabalho
-        run: pwd
+    - name: Mostra o diretório de trabalho
+      run: pwd
 
-      - name: Exibe nome do repositório
-        run: echo "Nome do repositório: ${{ github.repository }}"
+    - name: Lista arquivos no runner
+      run: ls -las
+
+    - name: Exibe nome do repositório
+      run: echo "Nome do repositório: ${{ github.repository }}"
+
+     
+
+     
