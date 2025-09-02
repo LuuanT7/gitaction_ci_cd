@@ -4,24 +4,19 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+    paths-ignore:
+      - 'README.md'
 
 jobs:
   meu-primeiro-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Imprime mensagem de boas-vindas
-        run: echo "Iniciando meu primeiro job!"
+      - name: Exibe RA e Nome
+        run: echo "RA: 6322504 - Nome: Luan Teixeira"
 
       - name: Mostra o diretório de trabalho
         run: pwd
 
-      - name: Lista arquivos no runner
-        run: ls -la
-
-      - name: Exibe informações do push
-        run: |
-          echo "Usuário que fez o push: $GITHUB_ACTOR"
-          echo "Branch do push: $GITHUB_REF_NAME"
-          echo "Hash do commit: $GITHUB_SHA"
+      - name: Exibe nome do repositório
+        run: echo "Nome do repositório: ${{ github.repository }}"
